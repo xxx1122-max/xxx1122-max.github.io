@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎访问我的网站</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            padding: 60px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            margin-bottom: 40px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .header p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 8px 20px;
+            background: #28a745;
+            color: white;
+            border-radius: 25px;
+            font-size: 1rem;
+            margin-top: 15px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .card {
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid #f0f0f0;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .feature-list {
+            list-style: none;
+        }
+        
+        .feature-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+        }
+        
+        .feature-list li:before {
+            content: "✅";
+            margin-right: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .tech-tag {
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .stat-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            border-left: 4px solid #667eea;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .footer {
+            text-align: center;
+            color: white;
+            padding: 30px;
+            margin-top: 50px;
+            opacity: 0.8;
+        }
+        
+        .github-link {
+            color: white;
+            text-decoration: none;
+            border: 2px solid white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 15px;
+        }
+        
+        .github-link:hover {
+            background: white;
+            color: #667eea;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .container {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎉 欢迎来到我的网站！</h1>
+            <p>这是一个使用 GitHub Pages 搭建的静态网站</p>
+            <p>完全免费 • 自动部署 • 全球访问</p>
+            <div class="badge">部署成功！</div>
+        </div>
+        
+        <div class="content-grid">
+            <div class="card">
+                <h2>🚀 网站特性</h2>
+                <ul class="feature-list">
+                    <li>基于 GitHub Pages 托管</li>
+                    <li>自动 HTTPS 安全加密</li>
+                    <li>响应式设计，支持所有设备</li>
+                    <li>全球 CDN 加速</li>
+                    <li>零服务器维护成本</li>
+                    <li>支持自定义域名</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2>💻 技术栈</h2>
+                <p>本网站使用以下技术构建：</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">GitHub Pages</span>
+                    <span class="tech-tag">响应式设计</span>
+                </div>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number" id="visit-count">1</span>
+                        <span class="stat-label">访问次数</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="online-time">0</span>
+                        <span class="stat-label">运行时间(天)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>📊 实时信息</h2>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number" id="current-time">--:--:--</span>
+                        <span class="stat-label">当前时间</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="page-size">2.1</span>
+                        <span class="stat-label">页面大小(KB)</span>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                    <strong>浏览器信息：</strong>
+                    <div id="browser-info" style="font-size: 0.9rem; margin-top: 8px;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>📝 实验说明</h2>
+            <p>这个网站是为了演示 GitHub Pages 的易用性和强大功能而创建的。</p>
+            <p><strong>实验目标：</strong>理解静态网站托管服务，掌握Git基础操作</p>
+            <p><strong>技术特点：</strong></p>
+            <ul class="feature-list">
+                <li>无需服务器配置</li>
+                <li>版本控制自动管理</li>
+                <li>支持自定义样式和交互</li>
+                <li>完全免费的托管服务</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>© 2024 我的个人网站 | 基于 GitHub Pages 构建</p>
+        <a href="https://github.com" class="github-link" target="_blank">
+            ⭐ 在 GitHub 上查看源码
+        </a>
+        <p style="margin-top: 15px; font-size: 0.9rem;">
+            最后更新: <span id="last-update">2024-01-01</span>
+        </p>
+    </div>
+
+    <script>
+        // 更新当前时间
+        function updateTime() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString('zh-CN', { 
+                hour12: false 
+            });
+            document.getElementById('current-time').textContent = timeString;
+        }
+        
+        // 访问计数
+        function updateVisitCount() {
+            let count = localStorage.getItem('visitCount');
+            if (!count) {
+                count = 1;
+            } else {
+                count = parseInt(count) + 1;
+            }
+            localStorage.setItem('visitCount', count);
+            document.getElementById('visit-count').textContent = count;
+        }
+        
+        // 计算在线时间（从第一次访问开始）
+        function updateOnlineTime() {
+            let firstVisit = localStorage.getItem('firstVisit');
+            if (!firstVisit) {
+                firstVisit = new Date().toISOString();
+                localStorage.setItem('firstVisit', firstVisit);
+            }
+            
+            const firstVisitDate = new Date(firstVisit);
+            const now = new Date();
+            const diffTime = Math.abs(now - firstVisitDate);
+            const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+            document.getElementById('online-time').textContent = diffDays;
+        }
+        
+        // 显示浏览器信息
+        function showBrowserInfo() {
+            const info = navigator.userAgent;
+            document.getElementById('browser-info').textContent = info;
+        }
+        
+        // 设置最后更新日期
+        function setLastUpdate() {
+            const now = new Date();
+            document.getElementById('last-update').textContent = 
+                now.toLocaleDateString('zh-CN');
+        }
+        
+        // 初始化所有功能
+        function init() {
+            updateTime();
+            updateVisitCount();
+            updateOnlineTime();
+            showBrowserInfo();
+            setLastUpdate();
+            
+            // 每秒更新时间
+            setInterval(updateTime, 1000);
+        }
+        
+        // 页面加载完成后初始化
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
