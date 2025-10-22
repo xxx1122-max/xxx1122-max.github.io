@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>欢迎访问我的网站</title>
+    <title>云计算实验 - 个人网站</title>
     <style>
         * {
             margin: 0;
@@ -157,6 +157,35 @@
             color: #666;
         }
         
+        .info-section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            border-left: 5px solid #667eea;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .info-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        
+        .info-item strong {
+            color: #495057;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+        
         .footer {
             text-align: center;
             color: white;
@@ -195,10 +224,49 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>🎉 欢迎来到我的网站！</h1>
-            <p>这是一个使用 GitHub Pages 搭建的静态网站</p>
+            <h1>🎓 云计算实验网站</h1>
+            <p>基于 GitHub Pages 的静态网站部署实践</p>
             <p>完全免费 • 自动部署 • 全球访问</p>
-            <div class="badge">部署成功！</div>
+            <div class="badge">实验项目 • 部署成功</div>
+        </div>
+        
+        <!-- 新增：学生信息卡片 -->
+        <div class="info-section">
+            <h2 style="color: #667eea; margin-bottom: 20px;">👨‍🎓 学生信息</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <strong>学校</strong>
+                    北京工商大学
+                </div>
+                <div class="info-item">
+                    <strong>学院</strong>
+                    计算机科学与技术学院
+                </div>
+                <div class="info-item">
+                    <strong>专业</strong>
+                    计算机科学与技术
+                </div>
+                <div class="info-item">
+                    <strong>课程名称</strong>
+                    云计算
+                </div>
+                <div class="info-item">
+                    <strong>学号</strong>
+                    2531061085
+                </div>
+                <div class="info-item">
+                    <strong>姓名</strong>
+                    梅纪鹏
+                </div>
+                <div class="info-item">
+                    <strong>班级</strong>
+                    计算机科学与技术 2025级 01班
+                </div>
+                <div class="info-item">
+                    <strong>指导教师</strong>
+                    李海生 教授
+                </div>
+            </div>
         </div>
         
         <div class="content-grid">
@@ -223,6 +291,8 @@
                     <span class="tech-tag">JavaScript</span>
                     <span class="tech-tag">GitHub Pages</span>
                     <span class="tech-tag">响应式设计</span>
+                    <span class="tech-tag">CSS Grid</span>
+                    <span class="tech-tag">Flexbox</span>
                 </div>
                 
                 <div class="stats">
@@ -245,7 +315,7 @@
                         <span class="stat-label">当前时间</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number" id="page-size">2.1</span>
+                        <span class="stat-number" id="page-size">3.2</span>
                         <span class="stat-label">页面大小(KB)</span>
                     </div>
                 </div>
@@ -259,25 +329,36 @@
         
         <div class="card">
             <h2>📝 实验说明</h2>
-            <p>这个网站是为了演示 GitHub Pages 的易用性和强大功能而创建的。</p>
-            <p><strong>实验目标：</strong>理解静态网站托管服务，掌握Git基础操作</p>
-            <p><strong>技术特点：</strong></p>
+            <p>这个网站是为了完成 <strong>《云计算技术与应用》</strong> 课程实验而创建的。</p>
+            
+            <h3 style="color: #667eea; margin: 20px 0 15px 0;">实验目标</h3>
             <ul class="feature-list">
-                <li>无需服务器配置</li>
+                <li>理解静态网站托管服务的原理</li>
+                <li>掌握 Git 和 GitHub 的基本操作</li>
+                <li>学习 HTML、CSS、JavaScript 前端技术</li>
+                <li>体验云原生应用的部署流程</li>
+                <li>掌握版本控制的概念和实践</li>
+            </ul>
+            
+            <h3 style="color: #667eea; margin: 20px 0 15px 0;">技术特点</h3>
+            <ul class="feature-list">
+                <li>无需服务器配置和维护</li>
                 <li>版本控制自动管理</li>
-                <li>支持自定义样式和交互</li>
+                <li>支持自定义样式和交互功能</li>
                 <li>完全免费的托管服务</li>
+                <li>自动 CI/CD 部署流程</li>
             </ul>
         </div>
-    </div>
+        
     
     <div class="footer">
-        <p>© 2024 我的个人网站 | 基于 GitHub Pages 构建</p>
-        <a href="https://github.com" class="github-link" target="_blank">
+        <p>© 2025 北京工商大学 - 计算机科学与技术学院 - 云计算实验项目</p>
+        <a href="https://github.com/xxx1122-max/xxx1122-max.github.io" class="github-link" target="_blank">
             ⭐ 在 GitHub 上查看源码
         </a>
         <p style="margin-top: 15px; font-size: 0.9rem;">
-            最后更新: <span id="last-update">2024-01-01</span>
+            最后更新: <span id="last-update">2025-10-22</span> | 
+            实验完成时间: <span id="completion-time">2025-10-22</span>
         </p>
     </div>
 
@@ -328,6 +409,8 @@
         function setLastUpdate() {
             const now = new Date();
             document.getElementById('last-update').textContent = 
+                now.toLocaleDateString('zh-CN');
+            document.getElementById('completion-time').textContent = 
                 now.toLocaleDateString('zh-CN');
         }
         
